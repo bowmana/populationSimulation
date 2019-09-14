@@ -1,0 +1,36 @@
+
+/*Alex Bowman
+ * 9/13
+ * csc-11
+ * HW#1
+ * agbowman0001@student.stcc.edu
+ 
+  -one birth every 7 seconds 
+  -one death every 13 seconds 
+  -one new immigrant every 45 seconds 
+ -current population 312032486
+ -Display the population for the next 5 years
+ */
+package main;
+
+public class hw1alexbowman {
+	public static void main(String[] args) {
+
+
+int time= 365*24*60*60;
+int birth= time/7;
+int death= time/13;
+int immigrants= time/45;
+int current= 312032486;
+int oneyear= current + birth - death + immigrants;
+int twoyears= oneyear + birth - death + immigrants;
+int threeyears= twoyears + birth - death + immigrants;
+int fouryears= threeyears + birth - death + immigrants;
+int fiveyears= fouryears + birth - death + immigrants;
+System.out.println(oneyear + "1 year: " );
+System.out.println(twoyears + "two years: ");
+System.out.println(threeyears + "three years: ");
+System.out.println(fouryears + "four years: ");
+System.out.println(fiveyears + "five years: ");
+	 }
+}
